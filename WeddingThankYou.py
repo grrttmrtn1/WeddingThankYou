@@ -64,7 +64,7 @@ class App:
         self.GLabel_559["text"] = "Status: starting..."
         if self.checkAPIKey():
             for i in range(len(self.df)):
-                message = f"Write a {self.df.loc[i, 'Event']} thank you card to {self.df.loc[i, 'Guest']} that has the relationship {self.df.loc[i, 'Relationship']} and gave the gift {self.df.loc[i, 'Present']}"
+                message = f"Write a single {self.df.loc[i, 'Event']} thank you card to {self.df.loc[i, 'Guest']} that has the relationship {self.df.loc[i, 'Relationship']} and gave the gift {self.df.loc[i, 'Present']}"
                 if 'TRUE' in str(self.df.loc[i, 'DidNotTalk']):
                     message = message + 'and apologize for being unable to get a chance to speak with them at the wedding'
                 print(message) 
